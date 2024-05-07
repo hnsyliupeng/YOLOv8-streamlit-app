@@ -31,15 +31,30 @@ SOURCES_LIST = ["Image", "Video", "Webcam"]
 
 # DL model config
 DETECTION_MODEL_DIR = ROOT / 'weights' / 'detection'
-YOLOv8n = DETECTION_MODEL_DIR / "yolov8n.pt"
-YOLOv8s = DETECTION_MODEL_DIR / "yolov8s.pt"
-YOLOv8m = DETECTION_MODEL_DIR / "yolov8m.pt"
-YOLOv8l = DETECTION_MODEL_DIR / "yolov8l.pt"
-YOLOv8x = DETECTION_MODEL_DIR / "yolov8x.pt"
+YOLOv5 = DETECTION_MODEL_DIR / "yolov5.pt"
+YOLOv8 = DETECTION_MODEL_DIR / "yolov8.pt"
+YOLOv8fine = DETECTION_MODEL_DIR / "yolov8gold.pt"
+#YOLOv8l = DETECTION_MODEL_DIR / "yolov8l.pt"
+#YOLOv8x = DETECTION_MODEL_DIR / "yolov8x.pt"
+#YOLOv8f = DETECTION_MODEL_DIR / "fiber.pt"
 
 DETECTION_MODEL_LIST = [
-    "yolov8n.pt",
-    "yolov8s.pt",
-    "yolov8m.pt",
-    "yolov8l.pt",
-    "yolov8x.pt"]
+    "yolov5.pt",
+    "yolov8.pt",
+    "yolov8gold.pt",
+    #"yolov8l.pt",
+    #"yolov8x.pt",
+    ]
+
+Segment_MODEL_DIR = ROOT / 'weights' / 'segment'
+SAMseg =Segment_MODEL_DIR /"sam_vit_b_01ec64.pth"
+SAMFineseg=Segment_MODEL_DIR /"sam_fine.pth"
+SAMMEseg=Segment_MODEL_DIR /"medsam_vit_b.pth"
+SAMLMseg=Segment_MODEL_DIR /"medlam.pth"
+SAMFTseg=Segment_MODEL_DIR /"swinl_only_sam_many2many.pth"
+Segment_MODEL_LIST = ["sam_vit_b_01ec64.pth",
+                     "sam_fine.pth",
+                     "medsam_vit_b.pth",
+                     "medlam.pth",
+                     "swinl_only_sam_many2many.pth"]
+
