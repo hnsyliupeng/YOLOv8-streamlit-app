@@ -3,3 +3,9 @@ conda create -n yolov8-streamlit python=3.8 -y
 
 # activate
 conda activate yolov8-streamlit
+
+# yolov8 dependencies
+pip install ultralytics
+
+# Streamlit dependencies
+pip install segment-anything
