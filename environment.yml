@@ -1,0 +1,5 @@
+# create
+conda create -n yolov8-streamlit python=3.8 -y
+
+# activate
+conda activate yolov8-streamlit
